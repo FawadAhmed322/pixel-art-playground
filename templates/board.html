@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Board</title>
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/board.css') }}">
+</head>
+<body>
+    <div>
+        <label for="colorPicker">Select Color: </label>
+        <input type="color" id="colorPicker" name="colorPicker" value="#000000">
+    </div>
+    <div id="boardContainer"></div>
+    <div>
+        <!-- Button to copy the board ID -->
+        <button id="copyBoardIdButton">Copy Board ID</button>
+    </div>
+    <!-- Place the script here at the end of the body -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/board.js') }}"></script>
+</body>
+</html>

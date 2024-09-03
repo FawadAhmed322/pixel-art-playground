@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Board</title>
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="form">
+        <div class="form-entries">
+            <span>Height</span>
+            <input type="number" id="height">
+            <span>Width</span>
+            <input type="number" id="width">
+            <button id="create">Create Board</button>
+        </div>
+        <div class="form-entries">
+            <span>Board ID</span>
+            <input type="id" id="id">
+            <button id="join">Join Board</button>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>

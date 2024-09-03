@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boardContainer {
+    display: grid;
+    gap: 0; /* No gap between cells */
+    /* border: 1px solid black; */
+}
+
+#boardContainer div {
+    border: 1px solid #000; /* Add a border to each cell */
+}
