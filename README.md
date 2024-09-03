@@ -36,7 +36,7 @@ python --version
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/pixel-art-playground.git
+   git clone https://github.com/fawadahmed322/pixel-art-playground.git
    cd pixel-art-playground
    ```
 
